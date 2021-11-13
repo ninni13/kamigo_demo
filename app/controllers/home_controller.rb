@@ -20,6 +20,13 @@ class HomeController < ApplicationController
   def test
   end
 
+  def fortune
+    @fortune = [
+      "「早餐店阿姨算你飲料免費」"
+      "「在地上撿到 100 塊」"
+      "「一出門就下雨」"
+    ]
+
   private
 
   def get_profile(user_id)

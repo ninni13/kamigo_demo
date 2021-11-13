@@ -32,6 +32,8 @@ Rails.application.routes.draw do
   # 學說話
   get "學 (*keyword) (*message)", to: 'home#learn'
 
+  get "本日運勢", to: "home#fortune"
+
   # 測試用
   get "test", to: "home#test"
   get "debug", to: "home#debug"
