@@ -1,30 +1,22 @@
 {
- "type": "text",
- "text": "快速回覆練習",
- "quickReply": {
-   "items": [
-     {
-       "type": "action",
-       "action": {
-         "type": "message",
-         "label": "Yes",
-         "text": "Yes"
-       }
-     },
-     {
-       "type": "action",
-       "action": {
-         "type": "cameraRoll",
-         "label": "Send photo"
-       }
-     },
-     {
-       "type": "action",
-       "action": {
-         "type": "camera",
-         "label": "Open camera"
-       }
-     }
-   ]
- }
+  "type": "flex",
+  "altText": "this is a flex message",
+  "contents": {
+    "type": "bubble",
+    "body": {
+      "type": "box",
+      "layout": "vertical",
+      "contents": [
+        {
+          "type": "button",
+          "action": {
+            "type": "message",
+            "label": "這是一個 Message Button",
+            "text": "傳送的文字"
+          },
+          "style": "primary"
+        }
+      ]
+    }
+  }
 }
