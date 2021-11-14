@@ -50,10 +50,20 @@ module FlexHelper
     end
   end
 
+  def border(color)
+    {
+    borderColor: color,
+    borderWidth: :light
+    }
+  end
   def blue_box(options = {})
- horizontal_box **border("#0000FF").merge(options) do
-   yield if block_given?
- end
-end
-
+    horizontal_box **border("#0000FF").merge(options) do
+    yield if block_given?
+    end
+  end
+  def green_box(options = {})
+    horizontal_box **border("#00FF00").merge(options) do
+    yield if block_given?
+    end
+  end
 end
